@@ -1,0 +1,38 @@
+{
+  "name": "wprocedure",
+  "version": "0.3.278",
+  "description": "Minimal programming interface to launch, stop and track collection of asynchronous procedures. It prevents an application from termination waiting for the last procedure and helps to diagnose your system with many interdependent procedures",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wprocedure",
+  "files": [
+    "proto/wtools/abase/l8_procedure",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wprocedure"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-1",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wProcedure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wProcedure/issues"
+  },
+  "dependencies": {
+    "wTools": "latest",
+    "wProto": "latest",
+    "wCopyable": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
