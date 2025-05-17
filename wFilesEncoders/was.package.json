@@ -1,0 +1,56 @@
+{
+  "name": "wfilesencoders",
+  "version": "0.3.325",
+  "engine": "node >= 10.0.0",
+  "description": "Collection of files transformers for Files module. Use it to read configs in different formats.",
+  "license": "MIT",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    {
+      "name": "Kostiantyn Wandalen",
+      "email": "wandalen@obox.systems"
+    }
+  ],
+  "main": "proto/node_modules/wfilesencoders",
+  "files": [
+    "proto/wtools/amid/l4_files",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wfilesencoders"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wFilesEncoders.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wFilesEncoders/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wgdf": "",
+    "wFiles": "",
+    "js2coffee": "",
+    "js-yaml": "",
+    "coffeescript": "",
+    "bson": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.32.0",
+    "cli-table2": ""
+  },
+  "keywords": [
+    "wTools",
+    "wFiles",
+    "wFilesEncoders",
+    "Files transformers",
+    "file",
+    "read file",
+    "write file"
+  ]
+}
