@@ -1,0 +1,45 @@
+{
+  "name": "wmodulefortesting3",
+  "version": "0.0.195",
+  "engine": "node >= 10.0.0",
+  "description": "Module for testing. This module is a test asset and not intended to be used with another purpose.",
+  "author": "Kostiantyn Wandalen <wanalen@01.school>",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Kostiantyn Wandalen",
+      "email": "wanalen@01.school"
+    },
+    {
+      "name": "Kryvoruchko Dmytro",
+      "email": "dm.vict.kr@gmail.com"
+    }
+  ],
+  "main": "proto/node_modules/wmodulefortesting3",
+  "files": [
+    "proto/wtools/testing/l3",
+    "proto/wtools/testing/Common.s",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/wmodulefortesting3"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wModuleForTesting3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wModuleForTesting3/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "wmodulefortesting1": "gamma"
+  },
+  "keywords": [
+    "willbe",
+    "test"
+  ]
+}
