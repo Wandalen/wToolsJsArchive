@@ -1,0 +1,39 @@
+{
+  "name": "widentitybasic",
+  "version": "0.2.188",
+  "description": "Tool to menage profiles for different utilities.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    "Kostiantyn Wandalen <wandalen@obox.systems>",
+    "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "proto/node_modules/widentitybasic",
+  "files": [
+    "proto/wtools/amid/l5/identity",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/widentitybasic"
+  ],
+  "scripts": {
+    "test": "wtest .run proto rapidity:-3",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wIdentityBasic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wIdentityBasic/issues"
+  },
+  "dependencies": {
+    "wcensorbasic": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
