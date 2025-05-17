@@ -1,0 +1,22 @@
+{
+  "name" : "wimagewriterdds",
+  "version" : "0.2.86",
+  "description" : "___",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "license" : "MIT",
+  "main" : "proto/node_modules/wimagewriterdds",
+  "files" : [ "proto/wtools/___", "proto/node_modules" ],
+  "scripts" : { "test" : "wtest .run proto rapidity:-3", "docgen" : "wdocgen .build proto" },
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/Wandalen/wImageWriterDds.git"
+  },
+  "bugs" :
+  {
+    "url" : "https://github.com/Wandalen/wImageWriterDds/issues"
+  },
+  "dependencies" : { "wTools" : "" },
+  "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0" },
+  "keywords" : [ "wTools" ]
+}
