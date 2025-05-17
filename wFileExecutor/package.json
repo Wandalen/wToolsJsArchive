@@ -1,0 +1,42 @@
+{
+  "name": "wfileexecutor",
+  "version": "0.3.398",
+  "description": "Experimental. Class to execute a collection of templates with inlined JavaScript code to instantiate it. A collection of templates could be co-dependent in which case FileExecutor deduce dependencies and correct order of templates executions.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wfileexecutor",
+  "files": [
+    "proto/wtools/amid/l7/executor",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wfileexecutor"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wFileExecutor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wFileExecutor/issues"
+  },
+  "dependencies": {
+    "wTools": "latest",
+    "wprocess": "latest",
+    "wpathtranslator": "latest",
+    "wfilesarchive": "latest",
+    "wFiles": "latest",
+    "wblueprint": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools",
+    "File executor"
+  ]
+}
