@@ -1,0 +1,39 @@
+{
+  "name": "wstager",
+  "version": "0.3.226",
+  "description": "Class to organize states of an object.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wstager",
+  "files": [
+    "proto/wtools/amid/l3",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wstager"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wStager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wStager/issues"
+  },
+  "dependencies": {
+    "wTools": "latest",
+    "wCopyable": "latest",
+    "wConsequence": "latest",
+    "wBitmask": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
