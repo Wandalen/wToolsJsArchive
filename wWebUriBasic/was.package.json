@@ -1,0 +1,37 @@
+{
+  "name": "wweburibasic",
+  "version": "0.3.240",
+  "description": "Collection of cross-platform routines to operate web URIs ( URLs ) in the reliable and consistent way. Module WebUri extends Uri module to handle host and port parts of URI in a way appropriate for world wide web resources. This module leverages parsing, joining, extracting, normalizing, nativizing, resolving paths. Use the module to get uniform experience from playing with paths on different platforms.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wweburibasic",
+  "files": [
+    "proto/wtools/abase/l5",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wweburibasic"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wWebUriBasic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wWebUriBasic/issues"
+  },
+  "dependencies": {
+    "wuribasic": "",
+    "wTools": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
