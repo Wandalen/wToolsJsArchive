@@ -1,0 +1,42 @@
+{
+  "name": "wmodulefortesting2b",
+  "version": "0.0.180",
+  "engine": "node >= 10.0.0",
+  "description": "Module for testing. This module is a test asset and not intended to be used with another purpose.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Kostiantyn Wandalen",
+      "email": "wandalen@obox.systems"
+    },
+    {
+      "name": "Kryvoruchko Dmytro",
+      "email": "dm.vict.kr@gmail.com"
+    }
+  ],
+  "main": "proto/node_modules/wmodulefortesting2b",
+  "files": [
+    "proto/wtools/testing/l4/testing2b",
+    "proto/wtools/testing/Common.s",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/wmodulefortesting2b"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wModuleForTesting2b.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wModuleForTesting2b/issues"
+  },
+  "dependencies": {
+    "wmodulefortesting2": "latest"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "willbe",
+    "test"
+  ]
+}
