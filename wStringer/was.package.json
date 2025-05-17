@@ -1,0 +1,36 @@
+{
+  "name": "wstringer",
+  "version": "0.3.311",
+  "description": "Stringer nicely stringifies structures does not matter how complex or cycled them are. Convenient tool for fast diagnostic and inspection of data during development and in production. Use it to see more, faster. Refactoring required.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wstringer",
+  "files": [
+    "proto/wtools/abase/l3",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wstringer"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-1",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wStringer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wStringer/issues"
+  },
+  "dependencies": {
+    "wTools": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
