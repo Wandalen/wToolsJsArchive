@@ -1,0 +1,37 @@
+[package]
+name = "tools"
+version = "0.1.0"
+edition = "2021"
+publish = false
+authors = [
+  "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>",
+]
+description = "Local wtools wrapper"
+
+[package.metadata.docs.rs]
+all-features = true
+
+include = [
+  "/rust/impl",
+  "/Cargo.toml",
+  "/Readme.md",
+  "/License",
+]
+
+[features]
+default = [ "use_std", "nightly" ]
+full = [ "use_std", "use_alloc" ]
+use_std = []
+use_alloc = []
+nightly = [ "wtools/nightly" ]
+
+[lib]
+name = "tools"
+path = "rust/impl/tools_lib.rs"
+
+[dependencies]
+wtest_basic = "~0.1"
+wtools = "~0.2"
+
+[dev-dependencies]

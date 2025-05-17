@@ -1,0 +1,52 @@
+[package]
+name = "wskatch"
+version = "0.1.0"
+edition = "2021"
+authors = [
+  "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "Volodymyr M. <volodymyr.migdal@gmail.com>",
+  "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>",
+]
+license = "MIT"
+readme = "Readme.md"
+documentation = "https://docs.rs/wskatch"
+repository = "https://github.com/Wandalen/wMath/tree/master/module/rust/wskatch"
+homepage = "https://github.com/Wandalen/wMath/tree/master/module/rust/wskatch"
+description = """
+___.
+"""
+categories = [ "algorithms", "development-tools" ]
+keywords = [ "fundamental", "general-purpose", "testing" ]
+
+[package.metadata.docs.rs]
+all-features = true
+
+include = [
+  "/rust/impl/math",
+  "/Cargo.toml",
+  "/Readme.md",
+  "/License",
+]
+
+[features]
+default = [ "use_std" ]
+full = [ "use_std", "use_alloc" ]
+use_std = []
+use_alloc = []
+
+[lib]
+name = "wskatch"
+path = "rust/impl/math/wskatch_lib.rs"
+
+[[test]]
+name = "wskatch_test"
+path = "rust/test/math/wskatch_test.rs"
+
+# [[example]]
+# name = "wskatch_trivial_sample"
+# path = "sample/rust/wskatch_trivial_sample/src/main.rs"
+
+[dependencies]
+test_tools = "~0.1"
+
+[dev-dependencies]

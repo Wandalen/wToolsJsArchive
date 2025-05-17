@@ -1,0 +1,8 @@
+[package]
+name = "math_adapter_trivial_sample"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+math_adapter = { version = "*", path = "../../../module/rust/math_adapter" }

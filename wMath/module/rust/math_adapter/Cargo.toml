@@ -1,0 +1,81 @@
+[package]
+name = "math_adapter"
+version = "0.3.8"
+edition = "2021"
+authors = [
+  "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "Volodymyr M. <volodymyr.migdal@gmail.com>",
+  "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>",
+]
+license = "MIT"
+readme = "Readme.md"
+documentation = "https://docs.rs/wmath"
+repository = "https://github.com/Wandalen/wMath/tree/master/module/rust/wmath"
+homepage = "https://github.com/Wandalen/wMath/tree/master/module/rust/wmath"
+description = """
+Collection of math adapters to decouple your application from math libraries' implementations and to provide both inter-libraries compatibility and affordable exchangeability.
+"""
+categories = [ "algorithms", "development-tools" ]
+keywords = [ "fundamental", "general-purpose", "testing" ]
+build = "rust/impl/math/adapter/math_adapter_build.rs"
+
+[package.metadata.docs.rs]
+all-features = true
+
+include = [
+  "/rust/impl/math",
+  "/Cargo.toml",
+  "/Readme.md",
+  "/License",
+]
+
+[features]
+default = [ "use_std" ]
+full = [ "use_std", "use_alloc" ]
+use_std = []
+use_alloc = []
+
+default_ops = [] # reuse operands and function of default math library
+cgmath_ops = [ "cgmath" ] # reuse operands and function of `cgmath` as math library
+nalgebra_ops = [ "nalgebra" ] # reuse operands and function of `nalgebra` as math library
+
+[lib]
+name = "math_adapter"
+path = "rust/impl/math/adapter/math_adapter_lib.rs"
+
+[[test]]
+name = "math_adapter_test"
+path = "rust/test/math/math_adapter_tests.rs"
+
+[[test]]
+name = "math_adapter_smoke_test"
+path = "rust/test/_integration_test/smoke_test.rs"
+
+[[example]]
+name = "math_adapter_trivial_sample"
+path = "../../../sample/rust/math_adapter_trivial_sample/src/main.rs"
+
+[[example]]
+name = "math_adapter_operators_sample"
+path = "../../../sample/rust/math_adapter_operators_sample/src/main.rs"
+
+[[example]]
+name = "math_adapter_interoperability_sample"
+path = "../../../sample/rust/math_adapter_interoperability_sample/src/main.rs"
+
+[build-dependencies]
+cfg_aliases = "~0.1"
+
+[dependencies]
+cgmath = { version = "~0", optional = true }
+nalgebra = { version = "~0", optional = true }
+winit = { version = "~0", optional = true }
+num-traits = "~0.2"
+meta_tools = "~0.2"
+mem_tools = "~0.1"
+derive_vector_interfaces = { path = "./rust/impl/math/adapter/vector_interfaces/derive_vector_interfaces" }
+# math_common = { path = "../../rust/math_common" }
+
+[dev-dependencies]
+# tools = { path = "../../rust/tools" }
+test_tools = { version = "~0.1" }
