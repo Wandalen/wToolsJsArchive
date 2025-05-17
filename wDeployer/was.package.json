@@ -1,0 +1,37 @@
+{
+  "name": "wDeployer",
+  "version": "0.3.13",
+  "enabled": 0,
+  "engine": "node >= 8.0.0",
+  "description": "",
+  "author": "Kostiantyn Wandalen <wanalen@willbe.so>",
+  "license": "MIT",
+  "main": "proto/dwtools/amid/deployer/Deployer.s",
+  "files": [
+    "proto/dwtools/amid/deployer",
+    "proto/dwtools/Tools.s", "out"
+  ],
+  "scripts": {
+    "test": "wtest staging",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wDeployer/.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wDeployer/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wFiles": "",
+    "wCopyable": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "wDeployer": "."
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
