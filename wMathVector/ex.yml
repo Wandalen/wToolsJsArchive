@@ -1,0 +1,26 @@
+
+name : wMathVector
+description : Collection of cross-platform routines for vector math
+keywords :
+- wTools
+- math
+- vector
+- dot product
+- convolution
+
+license : MIT
+author : Kostiantyn Wandalen <wandalen@obox.systems>
+contributors :
+- name : Kostiantyn Wandalen
+  email : wandalen@obox.systems
+- name : Volodymyr M.
+  email : volodymyr.migdal@gmail.com
+
+interpreter : node >= 10.0.0
+scripts :
+  test : wtest .run proto/**
+  make_doc : wdoc staging
+repository : git+https:///github.com/Wandalen/wMathVector.git
+bugs : https:///github.com/Wandalen/wMathVector/issues
+composition : ./im.yml
+registry : ./.wMathVector.wimex
