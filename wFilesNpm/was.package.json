@@ -1,0 +1,49 @@
+{
+  "name": "wfilesnpm",
+  "version": "0.0.36",
+  "enabled": 1,
+  "engine": "node >= 10.0.0",
+  "description": "Implements file provider to access files over NPM.",
+  "license": "MIT",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    "Kostiantyn Wandalen <wandalen@obox.systems>",
+    "Volodymyr M. <volodymyr.migdal@gmail.com>",
+    "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>"
+  ],
+  "main": "proto/node_modules/wfilesnpm",
+  "files": [
+    "proto/wtools/amid/l4_files",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wfilesnpm",
+    "out"
+  ],
+  "scripts": {
+    "test": "wtest \"proto/**\" rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wFilesNpm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wFilesNpm/issues"
+  },
+  "dependencies": {
+    "wnpmtools": "",
+    "wfilesbasic": "",
+    "tar": "6.1.11"
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools",
+    "wFilesNpm",
+    "npm",
+    "read file",
+    "write file"
+  ]
+}
