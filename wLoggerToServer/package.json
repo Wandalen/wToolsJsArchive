@@ -1,0 +1,49 @@
+{
+  "name" : "wloggertoserver",
+  "version" : "0.3.68",
+  "enabled" : 1,
+  "engine" : "node >= 10.0.0",
+  "description" : "The module in JavaScript provides convenient, layered, logging to the server.",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "contributors" :
+  [
+    { "name" : "Kostiantyn Wandalen", "email" : "wanalen@01.school" },
+    { "name" : "Volodymyr M.", "email" : "volodymyr.migdal@gmail.com" }
+  ],
+  "license" : "MIT",
+  "main" : "proto/wtools/amid/l1_logger/ToServer.s",
+  "files" : [ "proto/wtools/amid/l1_logger", "proto/node_modules/Tools", "out" ],
+  "scripts" : { "test" : "wtest .run 'proto/**' rapidity:-3", "docgen" : "wdocgen proto" },
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/Wandalen/wLoggerToServer.git"
+  },
+  "bugs" :
+  {
+    "url" : "https://github.com/Wandalen/wLoggerToServer/issues"
+  },
+  "dependencies" :
+  {
+    "wTools" : "alpha",
+    "wCopyable" : "alpha",
+    "wConsequence" : "alpha",
+    "wColor" : "alpha",
+    "wFiles" : "alpha",
+    "socket.io" : "3.0.4",
+    "socket-io-server" : "1.0.5",
+    "express" : "4.17.1"
+  },
+  "devDependencies" : { "wloggertoserver" : ".", "eslint" : "7.1.0", "wTesting" : "alpha" },
+  "keywords" :
+  [
+    "wTools",
+    "logger",
+    "logging",
+    "log",
+    "colorful log",
+    "multilevel log",
+    "colors",
+    "color"
+  ]
+}
