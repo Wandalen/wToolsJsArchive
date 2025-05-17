@@ -1,0 +1,51 @@
+{
+  "name": "wnamemapper",
+  "version": "0.4.296",
+  "engine": "node >= 10.0.0",
+  "license": "MIT",
+  "description": "Simple class to map names from one space to another and vice versa. Options for handling names collisions exist. Use the module to make your program shorter, more readable and to avoid typos.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    {
+      "name": "Kostiantyn Wandalen",
+      "email": "wandalen@obox.systems"
+    }
+  ],
+  "main": "proto/node_modules/wnamemapper",
+  "files": [
+    "proto/wtools/amid/l5_mapper/",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wnamemapper"
+  ],
+  "directories": {
+    "doc": "doc",
+    "main": "proto/wtools/amid/l5_mapper/NameMapper.s"
+  },
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wNameMapper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wNameMapper/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wCopyable": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools",
+    "Map names",
+    "Key by value",
+    "Translate"
+  ]
+}
