@@ -1,0 +1,34 @@
+
+==
+
+Which of the following console command is good?
+
+- `notgood first`
+- `notgood second`
+- `good third` <~ `$score += 1`
+- `notgood fourth`
+
+~ multiple : 1
+@ NodeJs : 1
+@ level : 0
+
+==
+
+What does it contain?
+
+- `The nothing`.
+- The good file <~ `$score += 2`
+- The bad file.
+- The fourth bad file.
+
+@ NodeJs : 1
+@ level : 2
+
+==
+
+What is >> edX <<- https://www.edx.org/ ?
+
+- Produces cars. <- https://www.edx.org/
+- Online courses. <~ `$score += 1`
+
+@ learning
