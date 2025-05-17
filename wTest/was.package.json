@@ -1,0 +1,39 @@
+{
+  "name": "wtest",
+  "version": "0.2.126",
+  "description": "Framework for convenient unit testing. Aggregates module Testing. Utility Test provides the intuitive interface, simple tests structure, asynchronous code handling mechanism, colorful report, verbosity control and more. Use the module to get free of routines which can be automated.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wtest",
+  "files": [
+    "proto/wtools/atop/tester/entry/Test.s",
+    "proto/wtools/atop/tester/include/Test.s",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wtest"
+  ],
+  "scripts": {
+    "test": "wtest .run proto rapidity:-3",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wTest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wTest/issues"
+  },
+  "dependencies": {
+    "wTools": "gamma",
+    "wTesting": "gamma"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "testing",
+    "unit test",
+    "functional test",
+    "wTools"
+  ]
+}
