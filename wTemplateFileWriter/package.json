@@ -1,0 +1,22 @@
+{
+  "name" : "wtemplatefilewriter",
+  "version" : "0.3.215",
+  "description" : "Write template to the file system, instantiating it. ",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "license" : "MIT",
+  "main" : "proto/node_modules/wtemplatefilewriter",
+  "files" : [ "proto/wtools/amid/l5_mapper", "out", "proto/node_modules" ],
+  "scripts" : { "test" : "wtest .run 'proto/**' rapidity:-3", "docgen" : "wdocgen proto" },
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/Wandalen/wTemplateFileWriter.git"
+  },
+  "bugs" :
+  {
+    "url" : "https://github.com/Wandalen/wTemplateFileWriter/issues"
+  },
+  "dependencies" : { "wTools" : "delta", "wtemplatetreeresolver" : "delta", "wFiles" : "delta" },
+  "devDependencies" : { "eslint" : "7.1.0", "wTesting" : "delta" },
+  "keywords" : [ "wTools", "template", "instantiating template", "file system" ]
+}
