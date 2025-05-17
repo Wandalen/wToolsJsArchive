@@ -1,0 +1,39 @@
+{
+  "name": "wstatesession",
+  "version": "0.3.251",
+  "description": "Mixin to add persistent session storing functionality to a class. StateSession extends StateStorage. These modules solve the common problem to persistently store the state( session ) of an object. Them let save the state in a specific moment ( for example on process exit ) and to restore the state later ( for example on process start ). Use the module to be more cross-platform, don't repeat yourself and forget about details of implementation you don't worry.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wstatesession",
+  "files": [
+    "proto/wtools/amid/amixin",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wstatesession"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wStateSession.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wStateSession/issues"
+  },
+  "dependencies": {
+    "wTools": "latest",
+    "wstatestorage": "latest",
+    "wProto": "latest",
+    "wFiles": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
