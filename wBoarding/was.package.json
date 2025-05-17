@@ -1,0 +1,40 @@
+
+{
+  "name" : "wboarding",
+  "version" : "0.3.0",
+  "description" : "Explain how to start",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "license" : "MIT",
+  "main" : "proto/wtools/amid/boarding",
+  "files" :
+  [
+    "proto/wtools/amid",
+    "proto/node_modules/Tools"
+  ],
+  "scripts" :
+  {
+    "test" : "wtest .run 'proto/**' rapidity:-3",
+    "docgen" : "wdocgen .build proto"
+  },
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https ://github.com/Wandalen/wBoarding.git"
+  },
+  "bugs" :
+  {
+    "url" : "https ://github.com/Wandalen/wBoarding/issues"
+  },
+  "dependencies" :
+  {
+    "wTools" : ""
+  },
+  "devDependencies" :
+  {
+    "wTesting" : ""
+  },
+  "keywords" :
+  [
+    "wTools"
+  ]
+}
