@@ -1,0 +1,37 @@
+{
+  "name": "wreplicator",
+  "version": "0.3.242",
+  "description": "Collection of cross-platform routines to replicate a complex data structure. It traverses input data structure deeply producing a copy of it.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wreplicator",
+  "files": [
+    "proto/wtools/abase/l4",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wreplicator"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wReplicator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wReplicator/issues"
+  },
+  "dependencies": {
+    "wTools": "latest",
+    "wlooker": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
