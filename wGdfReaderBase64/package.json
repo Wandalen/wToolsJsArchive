@@ -1,0 +1,22 @@
+{
+  "name" : "wgdfreaderbase64",
+  "version" : "0.2.83",
+  "description" : "___",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "license" : "MIT",
+  "main" : "proto/node_modules/wgdfreaderbase64",
+  "files" : [ "proto/wtools/___", "proto/node_modules" ],
+  "scripts" : { "test" : "wtest .run proto rapidity:-3", "docgen" : "wdocgen .build proto" },
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/Wandalen/wGdfReaderBase64.git"
+  },
+  "bugs" :
+  {
+    "url" : "https://github.com/Wandalen/wGdfReaderBase64/issues"
+  },
+  "dependencies" : { "wTools" : "delta" },
+  "devDependencies" : { "eslint" : "7.1.0", "wTesting" : "delta" },
+  "keywords" : [ "wTools" ]
+}
