@@ -1,0 +1,34 @@
+{
+  "name": "wdo",
+  "version": "0.3.4",
+  "enabled": 0,
+  "description": "Environment",
+  "author": "Kostiantyn Wandalen <wanalen@willbe.so>",
+  "license": "MIT",
+  "main": "staging/dwtools/amid/do",
+  "files": [
+    "staging/dwtools/amid",
+    "production"
+  ],
+  "scripts": {
+    "test": "wtest staging",
+    "make_doc": "./doc.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wDo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wDo/issues"
+  },
+  "dependencies": {
+    "wTools": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "wdo": "."
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
