@@ -1,0 +1,51 @@
+{
+  "name": "wmathscalar",
+  "version": "0.3.294",
+  "engine": "node >= 10.0.0",
+  "description": "Collection of functions for non-vector math",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    {
+      "name": "Kostiantyn Wandalen",
+      "email": "wandalen@obox.systems"
+    },
+    {
+      "name": "Pablo Garcimartin",
+      "email": "pablogarcimartinruiz@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "main": "proto/node_modules/wmathscalar",
+  "files": [
+    "proto/wtools/amath/l1",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wmathscalar"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-1",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wMathScalar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wMathScalar/issues"
+  },
+  "dependencies": {
+    "wTools": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools",
+    "math",
+    "scalar",
+    "series",
+    "progression"
+  ]
+}
