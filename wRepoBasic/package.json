@@ -1,0 +1,45 @@
+{
+  "name": "wrepobasic",
+  "version": "0.3.400",
+  "description": "Collection of tools to operate over remote git repositories programmatically.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    "Kostiantyn Wandalen <wandalen@obox.systems>",
+    "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "proto/node_modules/wrepobasic",
+  "files": [
+    "proto/wtools/amid/l3/repo",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wrepobasic"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wRepoBasic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wRepoBasic/issues"
+  },
+  "dependencies": {
+    "wTools": "latest",
+    "wgitpath": "latest",
+    "wfilesbasic": "latest",
+    "@octokit/rest": "=18.5.2"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools",
+    "git",
+    "repository"
+  ]
+}
