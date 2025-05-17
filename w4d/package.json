@@ -1,0 +1,33 @@
+{
+  "name": "w4d",
+  "version": "0.3.1",
+  "description": "Modular 2d/3d graphics engine",
+  "author": "Kostiantyn Wandalen <wanalen@willbe.so>",
+  "license": "MIT",
+  "main": "staging/dwtools/amid",
+  "files": [
+    "staging/dwtools/amid",
+    "production"
+  ],
+  "scripts": {
+    "test": "wtest staging",
+    "make_doc": "./doc.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/w4d.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/w4d/issues"
+  },
+  "dependencies": {
+    "wTools": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "w4d": "."
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
