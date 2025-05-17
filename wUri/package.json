@@ -1,0 +1,43 @@
+{
+  "name": "wuri",
+  "version": "0.3.144",
+  "description": "Module that aggregates tools for managing URI(s). `wUri` leverages parsing, joining, extracting, normalizing, nativizing, resolving URI(s)... Use the module to get uniform experience from playing with URI(s) on different platforms.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wuri",
+  "files": [
+    "proto/wtools/abase/l6/Include.s",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wuri"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https ://github.com/Wandalen/wUri.git"
+  },
+  "bugs": {
+    "url": "https ://github.com/Wandalen/wUri/issues"
+  },
+  "dependencies": {
+    "wweburibasic": "latest",
+    "wuribasic": "latest",
+    "wTools": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools",
+    "wPath",
+    "path",
+    "URL",
+    "URI",
+    "path",
+    "file"
+  ]
+}
