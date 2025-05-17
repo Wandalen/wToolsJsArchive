@@ -1,0 +1,15 @@
+#! /usr/bin/env node
+
+if( typeof module !== 'undefined' )
+{
+  const _ = require( 'Tools' );
+  _.include( 'wFiles' );
+  _.include( 'wProcess' );
+}
+
+const _ = _global_.wTools;
+let shell = _.process.startNjsPassingThrough
+({
+  execPath : _.path.join( __dirname, 'MainTop.s' ),
+  verbosity : 0,
+});

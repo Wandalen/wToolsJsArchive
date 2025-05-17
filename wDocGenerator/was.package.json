@@ -1,0 +1,69 @@
+{
+  "name": "wdocgenerator",
+  "version": "0.1.315",
+  "description": "Utility to generate documentation from jsdoc annotated source code",
+  "license": "MIT",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    {
+      "name": "Kostiantyn Wandalen",
+      "email": "wandalen@obox.systems"
+    },
+    {
+      "name": "Volodymyr M.",
+      "email": "volodymyr.migdal@gmail.com"
+    }
+  ],
+  "main": "proto/node_modules/wdocgenerator",
+  "files": [
+    "proto/wtools/atop/docgen",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wdocgenerator"
+  ],
+  "bin": {
+    "wdoc": "proto/wtools/atop/docgen/Exec2"
+  },
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-1",
+    "wdoc": "node proto/wtools/atop/docgen/Exec2",
+    "pack": "webpack --config ./webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wDocGenerator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wDocGenerator/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wtemplatetreeresolver": "",
+    "wtemplatetreeenvironment": "",
+    "wselectorextra": "",
+    "wselector": "",
+    "willbe": "",
+    "wFiles": "",
+    "wdocparser": "",
+    "wcommandsconfig": "",
+    "wcommandsaggregator": "",
+    "handlebars": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "webpack-cli": "",
+    "webpack": "",
+    "find-process": "",
+    "express": "",
+    "eslint": "7.32.0",
+    "babel-polyfill": "",
+    "babel-loader": ""
+  },
+  "keywords": [
+    "wTools",
+    "Documentation",
+    "jsdoc",
+    "jsdoc2md"
+  ]
+}

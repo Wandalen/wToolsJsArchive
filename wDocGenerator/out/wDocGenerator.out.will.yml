@@ -1,0 +1,2070 @@
+format: outwillfile-2.0
+root:
+  - wDocGenerator.out
+consistency:
+  ../will.yml: &ref_0
+    hash: ebb1b2917faaa630bf09f4d6151e8573
+    size: 7497
+module:
+  wDocGenerator.out:
+    about:
+      name: wDocGenerator
+      org: noorg
+      description: Utility to generate documentation from jsdoc annotated source code.
+      enabled: 1
+      version: 0.2.0
+      license: MIT
+      npm.name: wdocgenerator
+      npm.bin: &ref_1
+        wdoc: proto/wtools/atop/docgen/Exec2
+      author: Kostiantyn Wandalen <wandalen@obox.systems>
+      keywords: &ref_2
+        - wTools
+        - Documentation
+        - jsdoc
+        - jsdoc2md
+      contributors: &ref_3
+        - Kostiantyn Wandalen <wandalen@obox.systems>
+        - Volodymyr M. <volodymyr.migdal@gmail.com>
+      interpreters: &ref_4
+        - njs >= 10.0.0
+        - chrome >= 60.0.0
+        - firefox >= 60.0.0
+      npm.scripts: &ref_5
+        test: 'wtest .run proto/** rapidity:-1'
+        wdoc: node proto/wtools/atop/docgen/Exec2
+    path:
+      module.willfiles:
+        criterion:
+          predefined: 1
+        path: wDocGenerator.out.will.yml
+      module.common:
+        criterion:
+          predefined: 1
+        path: wDocGenerator.out
+      module.original.willfiles:
+        criterion:
+          predefined: 1
+        path: ../will.yml
+      module.peer.willfiles:
+        criterion:
+          predefined: 1
+        path: ../will.yml
+      module.peer.in:
+        criterion:
+          predefined: 1
+        path: ..
+      download:
+        criterion:
+          predefined: 1
+        path: ..
+      repository:
+        path: 'git+https:///github.com/Wandalen/wDocGenerator.git'
+      bugtracker:
+        path: 'https:///github.com/Wandalen/wDocGenerator/issues'
+      in:
+        path: .
+      out:
+        path: .
+      temp:
+        path: 'path::out'
+      proto:
+        path: ../proto
+      doc:
+        path: ../doc
+      export:
+        path: '{path::proto}/**'
+      out.raw.debug:
+        criterion:
+          debug: debug
+          raw: raw
+          content: prime
+        path: '{path::out}/debug'
+      out.compiled.debug:
+        criterion:
+          debug: debug
+          raw: compiled
+          content: prime
+        path: '{path::out}/compiled.debug'
+      out.raw.release:
+        criterion:
+          debug: release
+          raw: raw
+          content: prime
+        path: '{path::out}/raw.release'
+      out.compiled.release:
+        criterion:
+          debug: release
+          raw: compiled
+          content: prime
+        path: '{path::out}/release'
+      entry.proto.no.tests:
+        criterion:
+          tests: no.tests
+        path: ../proto/wtools/atop/docgen/MainTop.s
+      entry.proto.only.tests:
+        criterion:
+          tests: only.tests
+        path: ../proto/**/*.test.s
+      entry.out.raw.debug.debug:
+        criterion:
+          debug: debug
+          raw: raw
+          content: prime
+        path: '{path::out.*=1}/source/wtools/atop/docgen/MainTop.s'
+      entry.out.raw.debug.release:
+        criterion:
+          debug: release
+          raw: raw
+          content: prime
+        path: '{path::out.*=1}/source/wtools/atop/docgen/MainTop.s'
+      entry.out.compiled.debug.debug:
+        criterion:
+          debug: debug
+          raw: compiled
+          content: prime
+        path: '{path::out.*=}/source/Index.s'
+      entry.out.compiled.debug.release:
+        criterion:
+          debug: release
+          raw: compiled
+          content: prime
+        path: '{path::out.*=}/source/Index.s'
+      npm.proto.entry:
+        path:
+          - ../proto/wtools/atop/docgen/MainTop.s
+          - ../proto/node_modules/wdocgenerator
+      exported.dir.proto.export:
+        criterion:
+          generated: 1
+          content: proto
+          export: 1
+        path: ../proto
+      exported.files.proto.export:
+        criterion:
+          generated: 1
+          content: proto
+          export: 1
+        path:
+          - ../proto
+          - ../proto/Integration.test.ss
+          - ../proto/node_modules
+          - ../proto/node_modules/Tools
+          - ../proto/node_modules/wdocgenerator
+          - ../proto/wtools
+          - ../proto/wtools/abase
+          - ../proto/wtools/amid
+          - ../proto/wtools/atop
+          - ../proto/wtools/atop/docgen
+          - ../proto/wtools/atop/docgen/Exec
+          - ../proto/wtools/atop/docgen/Exec2
+          - ../proto/wtools/atop/docgen/IncludeBase.s
+          - ../proto/wtools/atop/docgen/IncludeMid.s
+          - ../proto/wtools/atop/docgen/MainBase.s
+          - ../proto/wtools/atop/docgen/MainTop.s
+          - ../proto/wtools/atop/docgen/l3
+          - ../proto/wtools/atop/docgen/l3/MdGenerator.s
+          - ../proto/wtools/atop/docgen/l3/renderer
+          - ../proto/wtools/atop/docgen/l3/renderer/Renderer.s
+          - ../proto/wtools/atop/docgen/l3/renderer/helpers
+          - ../proto/wtools/atop/docgen/l3/renderer/helpers/helper.js
+          - ../proto/wtools/atop/docgen/l3/renderer/templates
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/class
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/class/class-body.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/class/class-heading.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/class/class-members.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/class/class.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/entity
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/description.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/entity-body.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/entity-heading-href.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/entity-heading-return-type.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/entity-heading.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/entity/entity.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/examples.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/properties-table-heading.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/properties.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/entity/returns.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/entity/summary.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/entity/throws.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/entity/params
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/params/param-default.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/params/param-description.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/params/param-name.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/params/param-type.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/params/params-table-heading.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/params/params-table-row.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/entity/params/params.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/etc
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/etc/link.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/etc/part-of-class.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/etc/part-of-module.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/etc/part-of-namespace.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/etc/separator.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/index
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/index/classes-index.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/index/index-item.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/index/index.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/index/modules-index.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/index/namespaces-index.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/module
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/module/module-body.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/module/module-heading.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/module/module-member-heading-href.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/module/module-member-heading.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/module/module-member.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/module/module-members.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/module/module.hbs
+          - ../proto/wtools/atop/docgen/l3/renderer/templates/namespace
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/namespace/namespace-body.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/namespace/namespace-heading.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/namespace/namespace-members.hbs
+          - >-
+            ../proto/wtools/atop/docgen/l3/renderer/templates/namespace/namespace.hbs
+          - ../proto/wtools/atop/docgen/l4
+          - ../proto/wtools/atop/docgen/l4/docsify-app
+          - ../proto/wtools/atop/docgen/l4/docsify-app/index.html
+          - ../proto/wtools/atop/docgen/l4/docsify-app/server.ss
+          - ../proto/wtools/atop/docgen/l4/docsify-app/vendor
+          - ../proto/wtools/atop/docgen/l4/docsify-app/vendor/scripts
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/scripts/clipboard.min.js
+          - ../proto/wtools/atop/docgen/l4/docsify-app/vendor/scripts/docsify.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/scripts/jquery-3.3.1.min.js
+          - ../proto/wtools/atop/docgen/l4/docsify-app/vendor/scripts/main.js
+          - ../proto/wtools/atop/docgen/l4/docsify-app/vendor/scripts/search.js
+          - ../proto/wtools/atop/docgen/l4/docsify-app/vendor/scripts/uri.js
+          - ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/semantic.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/semantic.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/semantic.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/semantic.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/accordion.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/accordion.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/accordion.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/accordion.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/ad.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/ad.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/api.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/api.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/breadcrumb.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/breadcrumb.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/button.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/button.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/card.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/card.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/checkbox.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/checkbox.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/checkbox.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/checkbox.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/comment.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/comment.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/container.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/container.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/dimmer.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/dimmer.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/dimmer.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/dimmer.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/divider.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/divider.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/dropdown.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/dropdown.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/dropdown.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/dropdown.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/embed.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/embed.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/embed.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/embed.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/feed.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/feed.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/flag.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/flag.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/form.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/form.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/form.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/form.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/grid.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/grid.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/header.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/header.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/icon.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/icon.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/image.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/image.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/input.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/input.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/item.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/item.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/label.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/label.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/list.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/list.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/loader.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/loader.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/menu.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/menu.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/message.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/message.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/modal.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/modal.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/modal.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/modal.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/nag.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/nag.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/nag.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/nag.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/placeholder.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/placeholder.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/popup.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/popup.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/popup.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/popup.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/progress.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/progress.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/progress.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/progress.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/rail.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/rail.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/rating.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/rating.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/rating.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/rating.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/reset.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/reset.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/reveal.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/reveal.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/search.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/search.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/search.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/search.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/segment.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/segment.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/shape.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/shape.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/shape.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/shape.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/sidebar.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/sidebar.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/sidebar.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/sidebar.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/site.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/site.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/site.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/site.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/statistic.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/statistic.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/step.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/step.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/sticky.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/sticky.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/sticky.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/sticky.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/tab.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/tab.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/tab.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/tab.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/table.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/table.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/transition.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/transition.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/transition.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/transition.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/video.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/video.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/video.min.css
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/video.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/visibility.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/components/visibility.min.js
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/basic
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/basic/assets
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/basic/assets/fonts
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/basic/assets/fonts/icons.eot
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/basic/assets/fonts/icons.svg
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/basic/assets/fonts/icons.ttf
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/basic/assets/fonts/icons.woff
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/brand-icons.eot
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/brand-icons.svg
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/brand-icons.ttf
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/brand-icons.woff
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/brand-icons.woff2
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/icons.eot
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/icons.otf
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/icons.svg
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/icons.ttf
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/icons.woff
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/icons.woff2
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/outline-icons.eot
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/outline-icons.svg
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/outline-icons.ttf
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/outline-icons.woff
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/fonts/outline-icons.woff2
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/images
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/default/assets/images/flags.png
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/github
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/github/assets
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/github/assets/fonts
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/github/assets/fonts/octicons-local.ttf
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/github/assets/fonts/octicons.svg
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/github/assets/fonts/octicons.ttf
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/github/assets/fonts/octicons.woff
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/material
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/material/assets
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/material/assets/fonts
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/material/assets/fonts/icons.eot
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/material/assets/fonts/icons.svg
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/material/assets/fonts/icons.ttf
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/material/assets/fonts/icons.woff
+          - >-
+            ../proto/wtools/atop/docgen/l4/docsify-app/vendor/semantic-2.4.1/themes/material/assets/fonts/icons.woff2
+          - ../proto/wtools/atop/docgen/l4/docsify-app/vendor/styles
+          - ../proto/wtools/atop/docgen/l4/docsify-app/vendor/styles/search.css
+          - ../proto/wtools/atop/docgen/l4/docsify-app/vendor/styles/style.css
+          - ../proto/wtools/atop/docgen/l4/docsify-app/vendor/themes
+          - ../proto/wtools/atop/docgen/l4/docsify-app/vendor/themes/vue.css
+          - ../proto/wtools/atop/docgen/l4/server
+          - ../proto/wtools/atop/docgen/l4/server/server.ss
+          - ../proto/wtools/atop/docgen.test
+          - ../proto/wtools/atop/docgen.test/Ext.test.s
+          - ../proto/wtools/atop/docgen.test/_asset
+          - ../proto/wtools/atop/docgen.test/_asset/coverage
+          - ../proto/wtools/atop/docgen.test/_asset/coverage/File1.js
+          - ../proto/wtools/atop/docgen.test/_asset/generate-reference
+          - ../proto/wtools/atop/docgen.test/_asset/generate-reference/File1.js
+    submodule:
+      wTools:
+        path: 'npm:///wTools'
+        autoExporting: 0
+        enabled: 0
+      wFiles:
+        path: 'npm:///wFiles'
+        autoExporting: 0
+        enabled: 0
+      wtemplatetreeenvironment:
+        path: 'npm:///wtemplatetreeenvironment'
+        autoExporting: 0
+        enabled: 0
+      wtemplatetreeresolver:
+        path: 'npm:///wtemplatetreeresolver'
+        autoExporting: 0
+        enabled: 0
+      wselector:
+        path: 'npm:///wselector'
+        autoExporting: 0
+        enabled: 0
+      wselectorextra:
+        path: 'npm:///wselectorextra'
+        autoExporting: 0
+        enabled: 0
+      wcommandsaggregator:
+        path: 'npm:///wcommandsaggregator'
+        autoExporting: 0
+        enabled: 0
+      wcommandsconfig:
+        path: 'npm:///wcommandsconfig'
+        autoExporting: 0
+        enabled: 0
+      willbe:
+        path: 'npm:///willbe'
+        autoExporting: 0
+        enabled: 0
+      wdocparser:
+        path: 'npm:///wdocparser'
+        autoExporting: 0
+        enabled: 0
+      handlebars:
+        path: 'npm:///handlebars'
+        autoExporting: 0
+        enabled: 0
+      wdocgenerator:
+        path: 'hd://..'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      express:
+        path: 'npm:///express'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      find-process:
+        path: 'npm:///find-process'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      babel-loader:
+        path: 'npm:///babel-loader'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      babel-polyfill:
+        path: 'npm:///babel-polyfill'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      webpack:
+        path: 'npm:///webpack'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      webpack-cli:
+        path: 'npm:///webpack-cli'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      eslint:
+        path: 'npm:///eslint#7.1.0'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+    reflector:
+      reflect.proto.debug.raw:
+        src:
+          filePath:
+            'path::proto': '{path::out.*=1}/source'
+          prefixPath: ''
+        dst:
+          prefixPath: ''
+        criterion:
+          tests: no.tests
+          debug: debug
+          raw: raw
+          content: prime
+        inherit:
+          - predefined.*
+      reflect.proto.release.raw:
+        src:
+          filePath:
+            'path::proto': '{path::out.*=1}/source'
+          prefixPath: ''
+        dst:
+          prefixPath: ''
+        criterion:
+          tests: no.tests
+          debug: release
+          raw: raw
+          content: prime
+        inherit:
+          - predefined.*
+      reflect.proto.debug.compiled:
+        src:
+          filePath:
+            'path::proto': '{path::out.*=1}/source'
+          prefixPath: ''
+        dst:
+          prefixPath: ''
+        criterion:
+          tests: no.tests
+          debug: debug
+          raw: compiled
+          content: prime
+        inherit:
+          - predefined.*
+      reflect.proto.release.compiled:
+        src:
+          filePath:
+            'path::proto': '{path::out.*=1}/source'
+          prefixPath: ''
+        dst:
+          prefixPath: ''
+        criterion:
+          tests: no.tests
+          debug: release
+          raw: compiled
+          content: prime
+        inherit:
+          - predefined.*
+      transpile.proto.raw:
+        src:
+          filePath:
+            'path::proto': '{path::out.raw.release}'
+          prefixPath: ''
+        dst:
+          prefixPath: ''
+        criterion:
+          raw: raw
+          debug: release
+          content: prime
+        inherit:
+          - predefined.*
+      transpile.proto.no.tests.compiled.debug:
+        src:
+          filePath:
+            '**.test*': false
+            '**.test/**': false
+            'path::proto': '{path::out.*=1}/Main.s'
+          prefixPath: ''
+        dst:
+          prefixPath: ''
+        criterion:
+          tests: no.tests
+          raw: compiled
+          debug: debug
+          content: prime
+        inherit:
+          - predefined.*
+      transpile.proto.no.tests.compiled.release:
+        src:
+          filePath:
+            '**.test*': false
+            '**.test/**': false
+            'path::proto': '{path::out.*=1}/Main.s'
+          prefixPath: ''
+        dst:
+          prefixPath: ''
+        criterion:
+          tests: no.tests
+          raw: compiled
+          debug: release
+          content: prime
+        inherit:
+          - predefined.*
+      transpile.proto.only.tests.compiled.debug:
+        src:
+          filePath:
+            '**.test*': true
+            'path::proto': '{path::out.*=1}/Tests.test.s'
+          prefixPath: ''
+        dst:
+          prefixPath: ''
+        criterion:
+          tests: only.tests
+          raw: compiled
+          debug: debug
+          content: prime
+        inherit:
+          - predefined.*
+      transpile.proto.only.tests.compiled.release:
+        src:
+          filePath:
+            '**.test*': true
+            'path::proto': '{path::out.*=1}/Tests.test.s'
+          prefixPath: ''
+        dst:
+          prefixPath: ''
+        criterion:
+          tests: only.tests
+          raw: compiled
+          debug: release
+          content: prime
+        inherit:
+          - predefined.*
+      exported.proto.export:
+        src:
+          filePath:
+            '**': ''
+          prefixPath: ../proto
+        mandatory: 1
+        dstRewritingOnlyPreserving: 1
+        linkingAction: hardLinkMaybe
+        criterion:
+          generated: 1
+          content: proto
+          export: 1
+      exported.files.proto.export:
+        src:
+          filePath:
+            'path::exported.files.proto.export': ''
+          basePath: .
+          prefixPath: 'path::exported.dir.proto.export'
+          recursive: 0
+        recursive: 0
+        criterion:
+          generated: 1
+          content: proto
+          export: 1
+    step:
+      proto.export:
+        opts:
+          export: 'path::export'
+          tar: 0
+        criterion:
+          content: proto
+        inherit:
+          - module.export
+      doc.export:
+        opts:
+          export: 'path::doc'
+          tar: 0
+        criterion:
+          content: doc
+        inherit:
+          - module.export
+      npm.export:
+        opts:
+          export: out.npm
+          tar: 0
+        criterion:
+          content: npm
+        inherit:
+          - module.export
+      npm.generate.debug.raw:
+        opts:
+          entryPath: 'path::entry.out.*=1'
+          packagePath: '{path::out.*=1}/package.json'
+          filesPath: '{path::out.*=1}/source/**'
+        criterion:
+          debug: debug
+          raw: raw
+        inherit:
+          - npm.generate
+      npm.generate.release.raw:
+        opts:
+          entryPath: 'path::entry.out.*=1'
+          packagePath: '{path::out.*=1}/package.json'
+          filesPath: '{path::out.*=1}/source/**'
+        criterion:
+          debug: release
+          raw: raw
+        inherit:
+          - npm.generate
+      npm.generate.debug.compiled:
+        opts:
+          entryPath: 'path::entry.out.*=1'
+          packagePath: '{path::out.*=1}/package.json'
+          filesPath: '{path::out.*=1}/source/**'
+        criterion:
+          debug: debug
+          raw: compiled
+        inherit:
+          - npm.generate
+      npm.generate.release.compiled:
+        opts:
+          entryPath: 'path::entry.out.*=1'
+          packagePath: '{path::out.*=1}/package.json'
+          filesPath: '{path::out.*=1}/source/**'
+        criterion:
+          debug: release
+          raw: compiled
+        inherit:
+          - npm.generate
+      clean.out.debug.raw.no.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: raw
+          tests: no.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.release.raw.no.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: raw
+          tests: no.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.debug.compiled.no.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: compiled
+          tests: no.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.release.compiled.no.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: compiled
+          tests: no.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.debug.raw.only.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: raw
+          tests: only.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.release.raw.only.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: raw
+          tests: only.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.debug.compiled.only.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: compiled
+          tests: only.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.release.compiled.only.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: compiled
+          tests: only.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.debug.raw.no.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: raw
+          tests: no.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.release.raw.no.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: raw
+          tests: no.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.debug.compiled.no.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: compiled
+          tests: no.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.release.compiled.no.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: compiled
+          tests: no.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.debug.raw.only.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: raw
+          tests: only.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.release.raw.only.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: raw
+          tests: only.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.debug.compiled.only.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: compiled
+          tests: only.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.release.compiled.only.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: compiled
+          tests: only.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.npm:
+        opts:
+          filePath: 'path::out.*=1'
+        criterion:
+          debug: debug
+          raw: compiled
+          tests: no.tests
+          content: npm
+        inherit:
+          - files.delete
+      tst.proto:
+        opts:
+          shell: 'tst {path::proto}'
+        criterion:
+          content: proto
+      tst.debug:
+        opts:
+          shell: 'tst {path::out.*=1}'
+        criterion:
+          content: prime
+          debug: debug
+      tst.release:
+        opts:
+          shell: 'tst {path::out.*=1}'
+        criterion:
+          content: prime
+          debug: release
+      reflect.proto.debug.raw:
+        opts:
+          filePath: 'reflector::reflect.proto.debug.raw'
+        criterion:
+          tests: no.tests
+          debug: debug
+          raw: raw
+          content: prime
+        inherit:
+          - files.reflect
+      reflect.proto.release.raw:
+        opts:
+          filePath: 'reflector::reflect.proto.release.raw'
+        criterion:
+          tests: no.tests
+          debug: release
+          raw: raw
+          content: prime
+        inherit:
+          - files.reflect
+      reflect.proto.debug.compiled:
+        opts:
+          filePath: 'reflector::reflect.proto.debug.compiled'
+        criterion:
+          tests: no.tests
+          debug: debug
+          raw: compiled
+          content: prime
+        inherit:
+          - files.reflect
+      reflect.proto.release.compiled:
+        opts:
+          filePath: 'reflector::reflect.proto.release.compiled'
+        criterion:
+          tests: no.tests
+          debug: release
+          raw: compiled
+          content: prime
+        inherit:
+          - files.reflect
+      transpile.proto.raw:
+        opts:
+          entry: 'path::entry.proto.no.tests'
+          filePath: 'reflector::transpile.proto.raw'
+        criterion:
+          raw: raw
+          debug: release
+          content: prime
+        inherit:
+          - files.transpile
+      transpile.proto.no.tests.compiled.debug:
+        opts:
+          entry: 'path::entry.proto.*=1'
+          filePath: 'reflector::transpile.proto.no.tests.compiled.debug'
+        criterion:
+          tests: no.tests
+          raw: compiled
+          debug: debug
+          content: prime
+        inherit:
+          - files.transpile
+      transpile.proto.no.tests.compiled.release:
+        opts:
+          entry: 'path::entry.proto.*=1'
+          filePath: 'reflector::transpile.proto.no.tests.compiled.release'
+        criterion:
+          tests: no.tests
+          raw: compiled
+          debug: release
+          content: prime
+        inherit:
+          - files.transpile
+      transpile.proto.only.tests.compiled.debug:
+        opts:
+          entry: 'path::entry.proto.*=1'
+          external.before: '{path::out.*=1}/Main.s'
+          filePath: 'reflector::transpile.proto.only.tests.compiled.debug'
+        criterion:
+          tests: only.tests
+          raw: compiled
+          debug: debug
+          content: prime
+        inherit:
+          - files.transpile
+      transpile.proto.only.tests.compiled.release:
+        opts:
+          entry: 'path::entry.proto.*=1'
+          external.before: '{path::out.*=1}/Main.s'
+          filePath: 'reflector::transpile.proto.only.tests.compiled.release'
+        criterion:
+          tests: only.tests
+          raw: compiled
+          debug: release
+          content: prime
+        inherit:
+          - files.transpile
+    build:
+      proto.export:
+        steps:
+          - 'step::proto.export'
+        criterion:
+          content: proto
+          export: 1
+      doc.export:
+        steps:
+          - 'step::doc.export'
+        criterion:
+          content: doc
+          export: 1
+      export:
+        steps:
+          - 'build::proto.export'
+        criterion:
+          default: 1
+          export: 1
+      debug:
+        steps:
+          - 'step::clean.out*=2'
+          - reflect.proto.*=1
+        criterion:
+          default: 1
+          debug: debug
+          raw: raw
+          content: prime
+      compiled.debug:
+        steps:
+          - 'step::clean.out*=2'
+          - transpile.proto.no.tests*=1
+          - transpile.proto.only.tests*=1
+        criterion:
+          debug: debug
+          raw: compiled
+          content: prime
+      raw.release:
+        steps:
+          - 'step::clean.out*=2'
+          - transpile.proto.raw
+        criterion:
+          debug: release
+          raw: raw
+          content: prime
+      release:
+        steps:
+          - 'step::clean.out*=2'
+          - transpile.proto.no.tests*=1
+          - transpile.proto.only.tests*=1
+        criterion:
+          debug: release
+          raw: compiled
+          content: prime
+      npm:
+        steps:
+          - npm.generate.*=1
+        criterion:
+          debug: debug
+          raw: raw
+          content: npm
+      all:
+        steps:
+          - 'build::debug'
+          - 'build::compiled.debug'
+          - 'build::raw.release'
+          - 'build::release'
+          - 'build::npm'
+    exported:
+      proto.export:
+        version: 0.2.0
+        recursive: 0
+        withIntegrated: 2
+        tar: 0
+        exportedReflector: 'reflector::exported.proto.export'
+        exportedFilesReflector: 'reflector::exported.files.proto.export'
+        exportedDirPath: 'path::exported.dir.proto.export'
+        exportedFilesPath: 'path::exported.files.proto.export'
+        criterion:
+          content: proto
+          export: 1
+    consistency:
+      ../will.yml: *ref_0
+  ../:
+    about:
+      name: wDocGenerator
+      org: noorg
+      description: Utility to generate documentation from jsdoc annotated source code.
+      enabled: 1
+      version: 0.2.0
+      license: MIT
+      npm.name: wdocgenerator
+      npm.bin: *ref_1
+      author: Kostiantyn Wandalen <wandalen@obox.systems>
+      keywords: *ref_2
+      contributors: *ref_3
+      interpreters: *ref_4
+      npm.scripts: *ref_5
+    path:
+      module.willfiles:
+        criterion:
+          predefined: 1
+        path: will.yml
+      module.original.willfiles:
+        criterion:
+          predefined: 1
+        path: will.yml
+      module.peer.willfiles:
+        criterion:
+          predefined: 1
+        path: out/wDocGenerator.out.will.yml
+      module.peer.in:
+        criterion:
+          predefined: 1
+        path: out
+      module.common:
+        criterion:
+          predefined: 1
+        path: ./
+      download:
+        criterion:
+          predefined: 1
+        path: .
+      repository:
+        path: 'git+https:///github.com/Wandalen/wDocGenerator.git'
+      bugtracker:
+        path: 'https:///github.com/Wandalen/wDocGenerator/issues'
+      in:
+        path: .
+      out:
+        path: out
+      temp:
+        path: 'path::out'
+      proto:
+        path: proto
+      doc:
+        path: doc
+      export:
+        path: '{path::proto}/**'
+      out.raw.debug:
+        criterion:
+          debug: debug
+          raw: raw
+          content: prime
+        path: '{path::out}/debug'
+      out.compiled.debug:
+        criterion:
+          debug: debug
+          raw: compiled
+          content: prime
+        path: '{path::out}/compiled.debug'
+      out.raw.release:
+        criterion:
+          debug: release
+          raw: raw
+          content: prime
+        path: '{path::out}/raw.release'
+      out.compiled.release:
+        criterion:
+          debug: release
+          raw: compiled
+          content: prime
+        path: '{path::out}/release'
+      entry.proto.no.tests:
+        criterion:
+          tests: no.tests
+        path: proto/wtools/atop/docgen/MainTop.s
+      entry.proto.only.tests:
+        criterion:
+          tests: only.tests
+        path: proto/**/*.test.s
+      entry.out.raw.debug.debug:
+        criterion:
+          debug: debug
+          raw: raw
+          content: prime
+        path: '{path::out.*=1}/source/wtools/atop/docgen/MainTop.s'
+      entry.out.raw.debug.release:
+        criterion:
+          debug: release
+          raw: raw
+          content: prime
+        path: '{path::out.*=1}/source/wtools/atop/docgen/MainTop.s'
+      entry.out.compiled.debug.debug:
+        criterion:
+          debug: debug
+          raw: compiled
+          content: prime
+        path: '{path::out.*=}/source/Index.s'
+      entry.out.compiled.debug.release:
+        criterion:
+          debug: release
+          raw: compiled
+          content: prime
+        path: '{path::out.*=}/source/Index.s'
+      npm.proto.entry:
+        path:
+          - proto/wtools/atop/docgen/MainTop.s
+          - proto/node_modules/wdocgenerator
+    submodule:
+      wTools:
+        path: 'npm:///wTools'
+        autoExporting: 0
+        enabled: 0
+      wFiles:
+        path: 'npm:///wFiles'
+        autoExporting: 0
+        enabled: 0
+      wtemplatetreeenvironment:
+        path: 'npm:///wtemplatetreeenvironment'
+        autoExporting: 0
+        enabled: 0
+      wtemplatetreeresolver:
+        path: 'npm:///wtemplatetreeresolver'
+        autoExporting: 0
+        enabled: 0
+      wselector:
+        path: 'npm:///wselector'
+        autoExporting: 0
+        enabled: 0
+      wselectorextra:
+        path: 'npm:///wselectorextra'
+        autoExporting: 0
+        enabled: 0
+      wcommandsaggregator:
+        path: 'npm:///wcommandsaggregator'
+        autoExporting: 0
+        enabled: 0
+      wcommandsconfig:
+        path: 'npm:///wcommandsconfig'
+        autoExporting: 0
+        enabled: 0
+      willbe:
+        path: 'npm:///willbe'
+        autoExporting: 0
+        enabled: 0
+      wdocparser:
+        path: 'npm:///wdocparser'
+        autoExporting: 0
+        enabled: 0
+      handlebars:
+        path: 'npm:///handlebars'
+        autoExporting: 0
+        enabled: 0
+      wdocgenerator:
+        path: 'hd://.'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      express:
+        path: 'npm:///express'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      find-process:
+        path: 'npm:///find-process'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      babel-loader:
+        path: 'npm:///babel-loader'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      babel-polyfill:
+        path: 'npm:///babel-polyfill'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      webpack:
+        path: 'npm:///webpack'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      webpack-cli:
+        path: 'npm:///webpack-cli'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      eslint:
+        path: 'npm:///eslint#7.1.0'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+    reflector:
+      reflect.proto.debug.raw:
+        src:
+          filePath:
+            'path::proto': '{path::out.*=1}/source'
+        criterion:
+          tests: no.tests
+          debug: debug
+          raw: raw
+          content: prime
+        inherit:
+          - predefined.*
+      reflect.proto.release.raw:
+        src:
+          filePath:
+            'path::proto': '{path::out.*=1}/source'
+        criterion:
+          tests: no.tests
+          debug: release
+          raw: raw
+          content: prime
+        inherit:
+          - predefined.*
+      reflect.proto.debug.compiled:
+        src:
+          filePath:
+            'path::proto': '{path::out.*=1}/source'
+        criterion:
+          tests: no.tests
+          debug: debug
+          raw: compiled
+          content: prime
+        inherit:
+          - predefined.*
+      reflect.proto.release.compiled:
+        src:
+          filePath:
+            'path::proto': '{path::out.*=1}/source'
+        criterion:
+          tests: no.tests
+          debug: release
+          raw: compiled
+          content: prime
+        inherit:
+          - predefined.*
+      transpile.proto.raw:
+        src:
+          filePath:
+            'path::proto': '{path::out.raw.release}'
+        criterion:
+          raw: raw
+          debug: release
+          content: prime
+        inherit:
+          - predefined.*
+      transpile.proto.no.tests.compiled.debug:
+        src:
+          filePath:
+            '**.test*': 0
+            '**.test/**': 0
+            'path::proto': '{path::out.*=1}/Main.s'
+        criterion:
+          tests: no.tests
+          raw: compiled
+          debug: debug
+          content: prime
+        inherit:
+          - predefined.*
+      transpile.proto.no.tests.compiled.release:
+        src:
+          filePath:
+            '**.test*': 0
+            '**.test/**': 0
+            'path::proto': '{path::out.*=1}/Main.s'
+        criterion:
+          tests: no.tests
+          raw: compiled
+          debug: release
+          content: prime
+        inherit:
+          - predefined.*
+      transpile.proto.only.tests.compiled.debug:
+        src:
+          filePath:
+            '**.test*': 1
+            'path::proto': '{path::out.*=1}/Tests.test.s'
+        criterion:
+          tests: only.tests
+          raw: compiled
+          debug: debug
+          content: prime
+        inherit:
+          - predefined.*
+      transpile.proto.only.tests.compiled.release:
+        src:
+          filePath:
+            '**.test*': 1
+            'path::proto': '{path::out.*=1}/Tests.test.s'
+        criterion:
+          tests: only.tests
+          raw: compiled
+          debug: release
+          content: prime
+        inherit:
+          - predefined.*
+    step:
+      proto.export:
+        opts:
+          export: 'path::export'
+          tar: 0
+        criterion:
+          content: proto
+        inherit:
+          - module.export
+      doc.export:
+        opts:
+          export: 'path::doc'
+          tar: 0
+        criterion:
+          content: doc
+        inherit:
+          - module.export
+      npm.export:
+        opts:
+          export: out.npm
+          tar: 0
+        criterion:
+          content: npm
+        inherit:
+          - module.export
+      npm.generate.debug.raw:
+        opts:
+          entryPath: 'path::entry.out.*=1'
+          packagePath: '{path::out.*=1}/package.json'
+          filesPath: '{path::out.*=1}/source/**'
+        criterion:
+          debug: debug
+          raw: raw
+        inherit:
+          - npm.generate
+      npm.generate.release.raw:
+        opts:
+          entryPath: 'path::entry.out.*=1'
+          packagePath: '{path::out.*=1}/package.json'
+          filesPath: '{path::out.*=1}/source/**'
+        criterion:
+          debug: release
+          raw: raw
+        inherit:
+          - npm.generate
+      npm.generate.debug.compiled:
+        opts:
+          entryPath: 'path::entry.out.*=1'
+          packagePath: '{path::out.*=1}/package.json'
+          filesPath: '{path::out.*=1}/source/**'
+        criterion:
+          debug: debug
+          raw: compiled
+        inherit:
+          - npm.generate
+      npm.generate.release.compiled:
+        opts:
+          entryPath: 'path::entry.out.*=1'
+          packagePath: '{path::out.*=1}/package.json'
+          filesPath: '{path::out.*=1}/source/**'
+        criterion:
+          debug: release
+          raw: compiled
+        inherit:
+          - npm.generate
+      clean.out.debug.raw.no.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: raw
+          tests: no.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.release.raw.no.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: raw
+          tests: no.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.debug.compiled.no.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: compiled
+          tests: no.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.release.compiled.no.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: compiled
+          tests: no.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.debug.raw.only.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: raw
+          tests: only.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.release.raw.only.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: raw
+          tests: only.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.debug.compiled.only.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: compiled
+          tests: only.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.release.compiled.only.tests.prime:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: compiled
+          tests: only.tests
+          content: prime
+        inherit:
+          - files.delete
+      clean.out.debug.raw.no.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: raw
+          tests: no.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.release.raw.no.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: raw
+          tests: no.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.debug.compiled.no.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: compiled
+          tests: no.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.release.compiled.no.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: compiled
+          tests: no.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.debug.raw.only.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: raw
+          tests: only.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.release.raw.only.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: raw
+          tests: only.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.debug.compiled.only.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: debug
+          raw: compiled
+          tests: only.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.release.compiled.only.tests.npm:
+        opts:
+          filePath: '{path::out.*=1}/source'
+        criterion:
+          debug: release
+          raw: compiled
+          tests: only.tests
+          content: npm
+        inherit:
+          - files.delete
+      clean.out.npm:
+        opts:
+          filePath: 'path::out.*=1'
+        criterion:
+          debug: debug
+          raw: compiled
+          tests: no.tests
+          content: npm
+        inherit:
+          - files.delete
+      tst.proto:
+        opts:
+          shell: 'tst {path::proto}'
+        criterion:
+          content: proto
+      tst.debug:
+        opts:
+          shell: 'tst {path::out.*=1}'
+        criterion:
+          content: prime
+          debug: debug
+      tst.release:
+        opts:
+          shell: 'tst {path::out.*=1}'
+        criterion:
+          content: prime
+          debug: release
+      reflect.proto.debug.raw:
+        opts:
+          filePath: 'reflector::reflect.proto.debug.raw'
+        criterion:
+          tests: no.tests
+          debug: debug
+          raw: raw
+          content: prime
+        inherit:
+          - files.reflect
+      reflect.proto.release.raw:
+        opts:
+          filePath: 'reflector::reflect.proto.release.raw'
+        criterion:
+          tests: no.tests
+          debug: release
+          raw: raw
+          content: prime
+        inherit:
+          - files.reflect
+      reflect.proto.debug.compiled:
+        opts:
+          filePath: 'reflector::reflect.proto.debug.compiled'
+        criterion:
+          tests: no.tests
+          debug: debug
+          raw: compiled
+          content: prime
+        inherit:
+          - files.reflect
+      reflect.proto.release.compiled:
+        opts:
+          filePath: 'reflector::reflect.proto.release.compiled'
+        criterion:
+          tests: no.tests
+          debug: release
+          raw: compiled
+          content: prime
+        inherit:
+          - files.reflect
+      transpile.proto.raw:
+        opts:
+          entry: 'path::entry.proto.no.tests'
+          filePath: 'reflector::transpile.proto.raw'
+        criterion:
+          raw: raw
+          debug: release
+          content: prime
+        inherit:
+          - files.transpile
+      transpile.proto.no.tests.compiled.debug:
+        opts:
+          entry: 'path::entry.proto.*=1'
+          filePath: 'reflector::transpile.proto.no.tests.compiled.debug'
+        criterion:
+          tests: no.tests
+          raw: compiled
+          debug: debug
+          content: prime
+        inherit:
+          - files.transpile
+      transpile.proto.no.tests.compiled.release:
+        opts:
+          entry: 'path::entry.proto.*=1'
+          filePath: 'reflector::transpile.proto.no.tests.compiled.release'
+        criterion:
+          tests: no.tests
+          raw: compiled
+          debug: release
+          content: prime
+        inherit:
+          - files.transpile
+      transpile.proto.only.tests.compiled.debug:
+        opts:
+          entry: 'path::entry.proto.*=1'
+          external.before: '{path::out.*=1}/Main.s'
+          filePath: 'reflector::transpile.proto.only.tests.compiled.debug'
+        criterion:
+          tests: only.tests
+          raw: compiled
+          debug: debug
+          content: prime
+        inherit:
+          - files.transpile
+      transpile.proto.only.tests.compiled.release:
+        opts:
+          entry: 'path::entry.proto.*=1'
+          external.before: '{path::out.*=1}/Main.s'
+          filePath: 'reflector::transpile.proto.only.tests.compiled.release'
+        criterion:
+          tests: only.tests
+          raw: compiled
+          debug: release
+          content: prime
+        inherit:
+          - files.transpile
+    build:
+      proto.export:
+        steps:
+          - 'step::proto.export'
+        criterion:
+          content: proto
+          export: 1
+      doc.export:
+        steps:
+          - 'step::doc.export'
+        criterion:
+          content: doc
+          export: 1
+      export:
+        steps:
+          - 'build::proto.export'
+        criterion:
+          default: 1
+          export: 1
+      debug:
+        steps:
+          - 'step::clean.out*=2'
+          - reflect.proto.*=1
+        criterion:
+          default: 1
+          debug: debug
+          raw: raw
+          content: prime
+      compiled.debug:
+        steps:
+          - 'step::clean.out*=2'
+          - transpile.proto.no.tests*=1
+          - transpile.proto.only.tests*=1
+        criterion:
+          debug: debug
+          raw: compiled
+          content: prime
+      raw.release:
+        steps:
+          - 'step::clean.out*=2'
+          - transpile.proto.raw
+        criterion:
+          debug: release
+          raw: raw
+          content: prime
+      release:
+        steps:
+          - 'step::clean.out*=2'
+          - transpile.proto.no.tests*=1
+          - transpile.proto.only.tests*=1
+        criterion:
+          debug: release
+          raw: compiled
+          content: prime
+      npm:
+        steps:
+          - npm.generate.*=1
+        criterion:
+          debug: debug
+          raw: raw
+          content: npm
+      all:
+        steps:
+          - 'build::debug'
+          - 'build::compiled.debug'
+          - 'build::raw.release'
+          - 'build::release'
+          - 'build::npm'
+    consistency:
+      ../will.yml:
+        hash: ebb1b2917faaa630bf09f4d6151e8573
+        size: 7497
