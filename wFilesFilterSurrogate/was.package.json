@@ -1,0 +1,60 @@
+{
+  "name": "wfilesfiltersurrogate",
+  "version": "0.5.24",
+  "enabled": 0,
+  "engine": "node >= 8.0.0",
+  "description": "Filter for wFiles provider's that works with provided files tree cache as real file system",
+  "license": "MIT",
+  "author": "Kostiantyn Wandalen <wanalen@willbe.so>",
+  "contributors": [
+    {
+      "name": "Kostiantyn Wandalen",
+      "email": "wanalen@willbe.so"
+    },
+    {
+      "name": "Ihor Ostash",
+      "email": "iostashvxi@gmail.com"
+    },
+    {
+      "name": "Volodymyr M.",
+      "email": "volodymyr.migdal@gmail.com"
+    }
+  ],
+  "main": "proto/dwtools/amid/file/filter/Surrogate.s",
+  "files": [
+    "proto/dwtools/amid",
+    "proto/dwtools/Tools.s", "out"
+  ],
+  "scripts": {
+    "test": "wtest staging",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wFilesFilterSurrogate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wFilesFilterSurrogate/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wConsequence": "",
+    "wProto": "",
+    "wpathbasic": "",
+    "wRegexpObject": "",
+    "fs-extra": "",
+    "chokidar": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "typedarray-to-buffer": "",
+    "wfilesfiltersurrogate": "."
+  },
+  "keywords": [
+    "wTools",
+    "wFiles",
+    "file",
+    "read file",
+    "write file"
+  ]
+}
