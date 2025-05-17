@@ -1,0 +1,22 @@
+{
+  "name" : "wimagereadergif",
+  "version" : "0.2.80",
+  "description" : "___",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "license" : "MIT",
+  "main" : "proto/node_modules/wimagereadergif",
+  "files" : [ "proto/wtools/___", "proto/node_modules" ],
+  "scripts" : { "test" : "wtest .run proto rapidity:-3", "docgen" : "wdocgen .build proto" },
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/Wandalen/wImageReaderGif.git"
+  },
+  "bugs" :
+  {
+    "url" : "https://github.com/Wandalen/wImageReaderGif/issues"
+  },
+  "dependencies" : { "wTools" : "" },
+  "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0" },
+  "keywords" : [ "wTools" ]
+}
