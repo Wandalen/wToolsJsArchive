@@ -1,0 +1,46 @@
+{
+  "name": "wfileshttp",
+  "version": "0.2.112",
+  "description": "Implements file provider to access files over HTTP.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    "Kostiantyn Wandalen <wandalen@obox.systems>",
+    "Volodymyr M. <volodymyr.migdal@gmail.com>",
+    "Ihor O. <iostashvxi@gmail.com>",
+    "Pablo Garcimartin <pablogarcimartinruiz@gmail.com>",
+    "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "proto/node_modules/wfileshttp",
+  "files": [
+    "proto/wtools/amid/l4_files",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wfileshttp"
+  ],
+  "scripts": {
+    "test": "wtest .run \"proto/**\" rapidity:-3",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wFilesHttp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wFilesHttp/issues"
+  },
+  "dependencies": {
+    "wfilesbasic": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools",
+    "wFiles",
+    "file",
+    "standardized abstract interface",
+    "http"
+  ]
+}
