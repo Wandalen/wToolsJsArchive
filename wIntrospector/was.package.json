@@ -1,0 +1,54 @@
+{
+  "name": "wintrospector",
+  "version": "0.3.182",
+  "description": "Single programmatic interface to for javascript parsing tools",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wintrospector",
+  "files": [
+    "proto/wtools/amid/l3/introspector",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wintrospector"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https ://github.com/Wandalen/wIntrospector.git"
+  },
+  "bugs": {
+    "url": "https ://github.com/Wandalen/wIntrospector/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wstringer": "",
+    "wschema": "",
+    "wprocess": "",
+    "wlookerextra": "",
+    "wlooker": "",
+    "wLogger": "",
+    "wgraphbasic": "",
+    "wFiles": "",
+    "wCopyable": "",
+    "wConsequence": "",
+    "uglify-es": "3.3.9",
+    "typescript": "4.0.5",
+    "tree-sitter-javascript": "0.19.0",
+    "tree-sitter-cpp": "0.19.0",
+    "tree-sitter": "0.20.0",
+    "esprima": "4.0.1",
+    "acorn": "8.0.4",
+    "@babel/core": "7.12.3"
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
