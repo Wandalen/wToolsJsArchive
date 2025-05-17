@@ -1,0 +1,43 @@
+{
+  "name": "wintrospectorextra",
+  "version": "0.3.273",
+  "description": "Collection of cross-platform routines to write programs on drive.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    "Kostiantyn Wandalen <wandalen@obox.systems>",
+    "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "proto/node_modules/wintrospectorextra",
+  "files": [
+    "out",
+    "proto/wtools/abase/l2_introspector",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wintrospectorextra"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wIntrospectorExtra.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wIntrospectorExtra/issues"
+  },
+  "dependencies": {
+    "wTools": "latest",
+    "wintrospectorbasic": "latest",
+    "wfilesbasic": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "wprocess": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
