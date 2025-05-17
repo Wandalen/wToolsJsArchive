@@ -1,0 +1,61 @@
+{
+  "name": "wprocess",
+  "version": "0.3.651",
+  "description": "Collection of cross-platform routines to execute system commands, run shell, batches, launch external processes from JavaScript application. Module Process leverages not only outputting data from an application but also inputting, makes application arguments parsing and accounting easier. Use the module to get uniform experience from interaction with an external processes on different platforms and operating systems.",
+  "license": "MIT",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "enabled": 1,
+  "contributors": [
+    {
+      "name": "Kostiantyn Wandalen",
+      "email": "wandalen@obox.systems"
+    },
+    {
+      "name": "Volodymyr M.",
+      "email": "volodymyr.migdal@gmail.com"
+    }
+  ],
+  "main": "proto/node_modules/wprocess",
+  "files": [
+    "proto/wtools/abase/l4_process",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wprocess"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-1 fails:5",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wProcess.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wProcess/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wpathbasic": "",
+    "wintrospectorextra": "",
+    "wgdf": "",
+    "wfilesbasic": "",
+    "wdeasync": "",
+    "wConsequence": "",
+    "wblueprint": "",
+    "strip-ansi": "6.0.0"
+  },
+  "optionalDependencies": {
+    "w.process.tree.windows": "alpha"
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools",
+    "exec file",
+    "shell script",
+    "run program"
+  ]
+}
