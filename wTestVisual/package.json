@@ -1,0 +1,72 @@
+{
+  "name": "wtestvisual",
+  "version": "1.0.585",
+  "engine": "node >= 10.0.0",
+  "description": "Framework for convenient visual testing. Extends Testing.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    {
+      "name": "Kostiantyn Wandalen",
+      "email": "wandalen@obox.systems"
+    },
+    {
+      "name": "Volodymyr M.",
+      "email": "volodymyr.migdal@gmail.com"
+    },
+    {
+      "name": "Dmytro Kryvoruchko",
+      "email": "dm.vict.kr@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "main": "proto/node_modules/wTestVisual",
+  "files": [
+    "proto/wtools/atop/testing",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wTestVisual"
+  ],
+  "scripts": {
+    "test": "tst .run 'proto/**' rapidity:-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wTestVisual.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wTestVisual/issues"
+  },
+  "dependencies": {
+    "wTools": "latest",
+    "wselector": "latest",
+    "wpuppet": "latest",
+    "wProto": "latest",
+    "wprocesswatcher": "latest",
+    "wprocess": "latest",
+    "wlooker": "latest",
+    "wLogger": "latest",
+    "wintrospectorextra": "latest",
+    "winstancing": "latest",
+    "wFiles": "latest",
+    "wequaler": "latest",
+    "wCopyable": "latest",
+    "wConsequence": "latest",
+    "needle": "2.9.1",
+    "browserstack-local": "1.4.8"
+  },
+  "optionalDependencies": {
+    "wEventHandler": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "wstarter": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "testing",
+    "unit test",
+    "functional test",
+    "wTools"
+  ]
+}
