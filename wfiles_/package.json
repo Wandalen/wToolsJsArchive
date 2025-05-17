@@ -1,0 +1,18 @@
+{
+  "name" : "wfiles",
+  "version" : "0.3.1",
+  "description" : "___",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "license" : "MIT",
+  "main" : "proto/dwtools/___",
+  "files" : [ "proto/dwtools/___", "proto/dwtools/Tools.s" ],
+  "scripts" : { "test" : "wtest .run proto", "docgen" : "wdocgen .build proto" },
+  "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wfiles_.git" },
+  "bugs" :
+  {
+    "url" : "https://github.com/Wandalen/wfiles_/issues"
+  },
+  "dependencies" : { "wTools" : "alpha" },
+  "devDependencies" : { "wfiles_" : "file:.", "wTesting" : "alpha" },
+  "keywords" : [ "wTools" ]
+}
