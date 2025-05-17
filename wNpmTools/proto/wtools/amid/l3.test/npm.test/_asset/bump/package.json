@@ -1,0 +1,7 @@
+{
+  "name" : "test",
+  "version" : "0.0.0",
+  "devDependencies" : { "wTesting" : "", "wmodulefortesting1" : "alpha" },
+  "optionalDependencies" : { "wmodulefortesting2b" : "", "wmodulefortesting2a" : "" },
+  "bundledDependencies" : [ "wmodulefortesting2", "wmodulefortesting1b", "wmodulefortesting1a" ]
+}
