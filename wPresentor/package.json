@@ -1,0 +1,58 @@
+{
+  "name": "wpresentor",
+  "version": "0.3.33",
+  "engine": "node >= 10.0.0",
+  "description": "Presentation on your page.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    {
+      "name": "Kostiantyn Wandalen",
+      "email": "wandalen@obox.systems"
+    }
+  ],
+  "license": "MIT",
+  "main": "proto/node_modules/wpresentor",
+  "files": [
+    "proto/wtools/amid",
+    "proto/node_modules/Tools",
+    "out"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**'",
+    "sample": "browser-sync start -c sample/bs-config.js",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wPresentor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wPresentor/issues"
+  },
+  "dependencies": {
+    "wTools": "delta",
+    "wtemplatetreeenvironment": "delta",
+    "wProto": "delta",
+    "winstancing": "delta",
+    "wEventHandler": "delta",
+    "wdombasic": "delta",
+    "wCopyable": "delta",
+    "wConsequence": "delta",
+    "wcloner": "delta",
+    "stxt": "delta",
+    "jquery": "3.6.0"
+  },
+  "devDependencies": {
+    "wTesting": "delta",
+    "serve-index": "1.9.1",
+    "morgan": "1.10.0",
+    "express": "4.17.1",
+    "eslint": "7.32.0",
+    "browser-sync": "2.27.5"
+  },
+  "keywords": [
+    "wTools",
+    "Presentor",
+    "Presentation"
+  ]
+}
