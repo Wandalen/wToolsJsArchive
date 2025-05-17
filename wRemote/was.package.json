@@ -1,0 +1,39 @@
+{
+  "name": "wremote",
+  "version": "0.4.28",
+  "description": "Abstract interface of connection between several procedures",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wremote",
+  "files": [
+    "proto/wtools/amid/l3",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wremote"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-1",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https ://github.com/Wandalen/wRemote.git"
+  },
+  "bugs": {
+    "url": "https ://github.com/Wandalen/wRemote/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wprocess": "",
+    "wEventHandler": "",
+    "wCopyable": "",
+    "wConsequence": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "wpuppet": "",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
