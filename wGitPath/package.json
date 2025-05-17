@@ -1,0 +1,43 @@
+{
+  "name": "wgitpath",
+  "version": "0.3.408",
+  "description": "Collection of cross-platform routines to operate over git paths reliably and consistently. GitPath leverages parsing, normalizing, nativizing git paths. Use the module to get uniform experience from playing with paths on different platforms.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    "Kostiantyn Wandalen <wandalen@obox.systems>",
+    "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "proto/node_modules/wgitpath",
+  "files": [
+    "proto/wtools/amid/l3/git",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wgitpath"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wGitPath.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wGitPath/issues"
+  },
+  "dependencies": {
+    "wuribasic": "latest",
+    "wTools": "latest",
+    "wstringsextra": "latest",
+    "wfilesbasic": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
