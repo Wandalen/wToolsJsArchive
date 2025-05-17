@@ -1,0 +1,58 @@
+{
+  "name": "wscriptlauncher",
+  "version": "0.3.16",
+  "enabled": 0,
+  "description": "Provides a simple human-machine, machine-machine interfaces to run a script file on a platform of interest and get output to your terminal",
+  "author": "Kostiantyn Wandalen <wanalen@willbe.so>",
+  "license": "MIT",
+  "bin": {
+    "launcher": "staging/dwtools/amid/launcher/Launcher.ss"
+  },
+  "main": "staging/dwtools/amid/launcher/ScriptLauncher.s",
+  "files": [
+    "staging/dwtools/amid/launcher",
+    "production"
+  ],
+  "scripts": {
+    "test": "wtest staging",
+    "test2": "node staging/dwtools/amid/launcher/Launcher.ss sample/test.js allowPlistEdit : 0",
+    "make_doc": "./doc.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wScriptLauncher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wScriptLauncher/issues"
+  },
+  "dependencies": {
+    "browserstack-local": "",
+    "chrome-launcher": "",
+    "electron": "",
+    "express": "",
+    "firefox-location": "",
+    "get-port": "",
+    "plist": "",
+    "resolve": "",
+    "selenium-webdriver": "",
+    "socket.io": "",
+    "wConsequence": "",
+    "wCopyable": "",
+    "wFiles": "",
+    "wLogger": "",
+    "wpathfundamentals": "",
+    "wProto": "",
+    "wTesting": "",
+    "wTools": "",
+    "wcloner": "",
+    "winstancing": "",
+    "wloggertoserver": "",
+    "wremoterequire": ""
+  },
+  "devDependencies": {
+    "wscriptlauncher": "."
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
