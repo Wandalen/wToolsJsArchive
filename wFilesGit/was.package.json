@@ -1,0 +1,47 @@
+{
+  "name": "wfilesgit",
+  "version": "0.2.122",
+  "description": "Implements file provider to access files over Git.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    "Kostiantyn Wandalen <wandalen@obox.systems>",
+    "Volodymyr M. <volodymyr.migdal@gmail.com>",
+    "Ihor O. <iostashvxi@gmail.com>",
+    "Pablo Garcimartin <pablogarcimartinruiz@gmail.com>",
+    "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "proto/node_modules/wfilesgit",
+  "files": [
+    "proto/wtools/amid/l4_files",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wfilesgit"
+  ],
+  "scripts": {
+    "test": "wtest .run \"proto/**\" rapidity:-3",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wFilesGit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wFilesGit/issues"
+  },
+  "dependencies": {
+    "wgittools": "",
+    "wfilesbasic": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools",
+    "wFiles",
+    "file",
+    "standardized abstract interface",
+    "git"
+  ]
+}
