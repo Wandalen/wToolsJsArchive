@@ -1,0 +1,39 @@
+{
+  "name": "wintrospectorbasic",
+  "version": "0.3.276",
+  "description": "Collection of cross-platform routines to generate functions, manage execution of such and analyze them.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wintrospectorbasic",
+  "files": [
+    "proto/wtools/abase/l2_introspector",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wintrospectorbasic"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wIntrospectorBasic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wIntrospectorBasic/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wstringer": "",
+    "wpathbasic": "",
+    "wConsequence": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
