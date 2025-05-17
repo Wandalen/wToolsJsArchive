@@ -1,0 +1,18 @@
+# Common temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+nbproject/
