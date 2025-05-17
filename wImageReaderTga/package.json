@@ -1,0 +1,22 @@
+{
+  "name" : "wimagereadertga",
+  "version" : "0.2.80",
+  "description" : "___",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "license" : "MIT",
+  "main" : "proto/node_modules/wimagereadertga",
+  "files" : [ "proto/wtools/___", "proto/node_modules" ],
+  "scripts" : { "test" : "wtest .run proto rapidity:-3", "docgen" : "wdocgen .build proto" },
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/Wandalen/wImageReaderTga.git"
+  },
+  "bugs" :
+  {
+    "url" : "https://github.com/Wandalen/wImageReaderTga/issues"
+  },
+  "dependencies" : { "wTools" : "delta" },
+  "devDependencies" : { "eslint" : "7.1.0", "wTesting" : "delta" },
+  "keywords" : [ "wTools" ]
+}
