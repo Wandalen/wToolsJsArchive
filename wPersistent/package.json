@@ -1,0 +1,37 @@
+{
+  "name": "wpersistent",
+  "version": "0.3.167",
+  "description": "Abstract interface of persistent data storage.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wpersistent",
+  "files": [
+    "proto/wtools/amid/l3",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wpersistent"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https ://github.com/Wandalen/wPersistent.git"
+  },
+  "bugs": {
+    "url": "https ://github.com/Wandalen/wPersistent/issues"
+  },
+  "dependencies": {
+    "wTools": "latest",
+    "wFiles": "latest",
+    "wConsequence": "latest"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "=7.1.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
