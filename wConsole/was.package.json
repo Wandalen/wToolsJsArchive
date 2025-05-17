@@ -1,0 +1,49 @@
+{
+  "name" : "wconsole",
+  "version" : "0.0.165",
+  "engine" : "node >= 10.0.0",
+  "description" : "",
+  "license" : "MIT",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "contributors" :
+  [
+    { "name" : "Kostiantyn Wandalen", "email" : "wanalen@01.school" },
+    { "name" : "Volodymyr M.", "email" : "volodymyr.migdal@gmail.com" }
+  ],
+  "main" : "proto/wtools/amid/console/ConsoleService.s",
+  "files" : [ "proto/wtools/amid/console", "out" ],
+  "scripts" : { "test" : "wtest .run 'proto/**' rapidity:-3" },
+  "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wConsole.git" },
+  "bugs" :
+  {
+    "url" : "https://github.com/Wandalen/wConsole/issues"
+  },
+  "dependencies" :
+  {
+    "wConsequence" : "",
+    "wCopyable" : "",
+    "wLogger" : "",
+    "wRegexpObject" : "",
+    "wTools" : "",
+    "wprocess" : "",
+    "wfieldsstack" : "",
+    "wpathbasic" : "",
+    "wintrospectorbasic" : "",
+    "wselector" : "",
+    "wstarter" : "",
+    "wstringer" : "",
+    "wstringsextra" : "",
+    "wuribasic" : "",
+    "wverbal" : "",
+    "wvocabulary" : "",
+    "wweburibasic" : "",
+    "babel-runtime" : "^6.26.0",
+    "babel-regenerator-runtime" : "^6.5.0",
+    "readline" : "",
+    "is-fullwidth-code-point" : "",
+    "strip-ansi" : "",
+    "winstancing" : ""
+  },
+  "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0", "wconsole" : "file:." },
+  "keywords" : [ "wTools" ]
+}
