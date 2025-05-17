@@ -1,0 +1,57 @@
+{
+  "name": "wdownloaderofcourses",
+  "version": "0.1.6",
+  "enabled": 0,
+  "engine": "node >= 6.0.0",
+  "license": "MIT",
+  "description": "The module in JavaScript for downloading courses.",
+  "author": "Kostiantyn Wandalen <wanalen@willbe.so>",
+  "contributors": [
+    {
+      "name": "Kostiantyn Wandalen",
+      "email": "wanalen@willbe.so"
+    },
+    {
+      "name": "Volodymyr M.",
+      "email": "volodymyr.migdal@gmail.com"
+    }
+  ],
+  "main": "staging/dwtools/atop/downloader/courses/Abstract.s",
+  "files": [
+    "staging/dwtools/atop/downloader",
+    "staging/dwtools/atop/variator",
+    "production"
+  ],
+  "directories": {
+    "doc": "doc",
+    "main": "staging/dwtools/atop/downloader/courses/Abstract.s"
+  },
+  "scripts": {
+    "test": "wtest staging",
+    "make_doc": "./doc.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wDownloaderOfCourses.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wDownloaderOfCourses/issues"
+  },
+  "dependencies": {
+    "wConsequence": "",
+    "wFiles": "",
+    "wTools": "",
+    "wLogger": "",
+    "wnamemapper": "",
+    "randomstring": "",
+    "request": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "wdownloaderofcourses": "."
+  },
+  "keywords": [
+    "wTools",
+    "courses"
+  ]
+}
