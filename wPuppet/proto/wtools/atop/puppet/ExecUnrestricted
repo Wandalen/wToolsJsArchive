@@ -1,0 +1,15 @@
+#! /usr/bin/env node
+
+if( typeof module !== 'undefined' )
+{
+  const _ = require( '../../../node_modules/Tools' );
+  _.include( 'wProcess' );
+}
+
+const _ = _global_.wTools;
+let o =
+{
+  execPath : _.path.join( __dirname, 'Main.s' ),
+}
+_.process._exitHandlerRepair();
+_.process.startNjsPassingThrough( o );

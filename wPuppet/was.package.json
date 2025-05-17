@@ -1,0 +1,42 @@
+{
+  "name": "wpuppet",
+  "version": "0.3.179",
+  "description": "Browser puppet strategy",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "license": "MIT",
+  "main": "proto/node_modules/wpuppet",
+  "files": [
+    "proto/wtools/atop/puppet",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wpuppet"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https ://github.com/Wandalen/wPuppet.git"
+  },
+  "bugs": {
+    "url": "https ://github.com/Wandalen/wPuppet/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wprocess": "",
+    "wLogger": "",
+    "wFiles": "",
+    "wEventHandler": "",
+    "webdriverio": "7.16.13",
+    "wCopyable": "",
+    "puppeteer": "13.3.2"
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
