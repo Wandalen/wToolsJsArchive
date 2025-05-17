@@ -1,0 +1,55 @@
+{
+  "name": "wmathmodels",
+  "version": "0.4.292",
+  "engine": "node >= 10.0.0",
+  "description": "Collection of functions to operate such geometrical concepts as Sphere, Box, Plane, Frustum, Ray, Axis and Angle, Euler's Angles, Quaternion and other. Why MathModels? Three reasons. All functions of the module are purely functional. MathModels heavily relies on another great concept MathVector what makes the module less sensible to data formats of operational objects. The module provides functions for conversions from one to another conceptual form, for example from Quaternion to Euler's Angles or from Euler's Angles to Quaternion or between different representations of Euler's Angles. Unlike MatchConcepts many alternatives do conversions inconsistently or inaccurately. MatchConcepts is densely covered by tests and optimized for accuracy. Use MatchConcepts to have uniform experience solving geometrical problems and to get a more flexible program.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    {
+      "name": "Kostiantyn Wandalen",
+      "email": "wandalen@obox.systems"
+    },
+    {
+      "name": "Pablo Garcimartin",
+      "email": "pablogarcimartinruiz@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "main": "proto/node_modules/wmathmodels",
+  "files": [
+    "proto/wtools/amath/l7_concept",
+    "proto/wtools/amath/l8",
+    "out",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wmathmodels"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-1",
+    "docgen": "wdocgen proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wMathModels.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wMathModels/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wmathvector": "",
+    "wmathscalar": "",
+    "wmathmatrix": ""
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools",
+    "math",
+    "vector",
+    "dot product",
+    "convolution"
+  ]
+}

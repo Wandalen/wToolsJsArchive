@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg402"
+   viewBox="-0.5 -0.5 2363 1348"
+   height="1348px"
+   width="2363px"
+   version="1.1"
+   sodipodi:docname="Frustum.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="839"
+     id="namedview45"
+     showgrid="false"
+     inkscape:zoom="0.7588755"
+     inkscape:cx="987.39662"
+     inkscape:cy="873.47289"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg402" />
+  <metadata
+     id="metadata406">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2" />
+  <rect
+     x="5"
+     y="5"
+     width="1445"
+     height="524"
+     pointer-events="all"
+     id="rect4"
+     style="fill:none;stroke:none" />
+  <circle
+     cx="905.47998"
+     cy="891.96997"
+     pointer-events="all"
+     id="ellipse326"
+     r="6.5"
+     style="fill:#000000;stroke:#000000;stroke-width:4" />
+  <rect
+     x="1474.98"
+     y="554.46997"
+     width="38"
+     height="27"
+     pointer-events="all"
+     id="rect328"
+     style="fill:none;stroke:none" />
+  <g
+     transform="translate(-849.52,-445.03)"
+     id="g334">
+    <switch
+       id="switch332">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 1013px; margin-left: 2343px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 18px; font-family: Helvetica; color: #4D4D4D; line-height: 1.2; pointer-events: all; white-space: nowrap; ">far</xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <text
+         x="2343"
+         y="1018"
+         font-size="18px"
+         id="text330"
+         style="font-size:18px;font-family:Helvetica;text-anchor:middle;fill:#4d4d4d">far</text>
+    </switch>
+  </g>
+  <path
+     d="m 1489.98,547.47 q 33,-52 -35.21,-20.66"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path336"
+     style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+  <path
+     d="m 1450,529 4.9,-6.1 -0.13,3.91 3.05,2.45 z"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path338"
+     style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+  <rect
+     x="959.97998"
+     y="763.46997"
+     width="54"
+     height="27"
+     pointer-events="all"
+     id="rect340"
+     style="fill:none;stroke:none" />
+  <g
+     transform="translate(-849.52,-445.03)"
+     id="g346">
+    <switch
+       id="switch344">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 1222px; margin-left: 1836px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 18px; font-family: Helvetica; color: #4D4D4D; line-height: 1.2; pointer-events: all; white-space: nowrap; ">near</xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <text
+         x="1836"
+         y="1227"
+         font-size="18px"
+         id="text342"
+         style="font-size:18px;font-family:Helvetica;text-anchor:middle;fill:#4d4d4d">near</text>
+    </switch>
+  </g>
+  <rect
+     x="1015.98"
+     y="476.47"
+     width="41"
+     height="27"
+     pointer-events="all"
+     id="rect348"
+     style="fill:none;stroke:none" />
+  <g
+     transform="translate(-849.52,-445.03)"
+     id="g354">
+    <switch
+       id="switch352">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 935px; margin-left: 1886px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 18px; font-family: Helvetica; color: #4D4D4D; line-height: 1.2; pointer-events: all; white-space: nowrap; ">top</xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <text
+         x="1886"
+         y="940"
+         font-size="18px"
+         id="text350"
+         style="font-size:18px;font-family:Helvetica;text-anchor:middle;fill:#4d4d4d">top</text>
+    </switch>
+  </g>
+  <rect
+     x="1301.98"
+     y="800.46997"
+     width="57"
+     height="27"
+     pointer-events="all"
+     id="rect356"
+     style="fill:none;stroke:none" />
+  <g
+     transform="translate(-849.52,-445.03)"
+     id="g362">
+    <switch
+       id="switch360">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 1259px; margin-left: 2179px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 18px; font-family: Helvetica; color: #4D4D4D; line-height: 1.2; pointer-events: all; white-space: nowrap; ">right</xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <text
+         x="2179"
+         y="1264"
+         font-size="18px"
+         id="text358"
+         style="font-size:18px;font-family:Helvetica;text-anchor:middle;fill:#4d4d4d">right</text>
+    </switch>
+  </g>
+  <path
+     d="m 906.98,892.97 499,-433"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path364"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  <path
+     d="M 905.48,885.47 1120.84,409.94"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path366"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  <path
+     d="M 905.98,892.47 1212.06,686.56"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path368"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  <path
+     d="m 911.98,893.97 560,-137"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path370"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  <path
+     d="m 1471.98,756.47 -66,-295.5"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path372"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  <path
+     d="m 989.98,699.47 96,38.5"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path374"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  <path
+     d="m 1122.98,842.97 -37,-105"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path376"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  <path
+     d="m 1121.56,409.94 90.42,276.53"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path378"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  <path
+     d="m 1211.98,686.47 260,70"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path380"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  <path
+     d="M 1404.98,459.97 1121.56,410.43"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path382"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  <path
+     d="m 1029.98,809.47 92,32"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path384"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  <path
+     d="m 1029.98,810.47 -40,-110"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path386"
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+  <path
+     id="path4305"
+     d="m 1123.7295,411.9627 278.2871,48.88537 -204.0033,177.64883 z"
+     style="fill:#d4e1f5;fill-opacity:1;stroke:#d4e1f5;stroke-width:0.65886962;stroke-opacity:1" />
+  <path
+     id="path4307"
+     d="m 992.88847,698.39155 128.00913,-282.81883 73.7915,224.38788 -110.021,95.4327 z"
+     style="fill:#d4e0f4;fill-opacity:0.85098039;stroke:#d4e1f5;stroke-width:2.6354785;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccc" />
+  <path
+     id="path4309"
+     d="m 1075.3944,823.77422 -42.8759,-14.9526 62.526,-41.74454 24.8729,71.41564 z"
+     style="fill:#99adc2;fill-opacity:1;stroke:#d4e1f5;stroke-width:0.65886962;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccc" />
+  <path
+     id="path4311"
+     d="m 1030.1526,807.84869 -5.8336,-15.47362 60.9935,-52.68602 9.1048,25.11748 z"
+     style="fill:#99adc2;fill-opacity:1;stroke:#d4e1f5;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccc" />
+  <path
+     id="path4313"
+     d="m 1023.8243,790.61476 -33.15218,-89.85275 93.24398,37.37436 z"
+     style="fill:#99adc2;fill-opacity:1;stroke:#d4e1f5;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccc" />
+  <path
+     id="path4315"
+     d="m 1098.0491,765.49026 114.1967,-76.97122 252.4559,68.15732 -340.5559,83.18928 z"
+     style="fill:#e6f4f4;fill-opacity:0.85098039;stroke:#d4e1f5;stroke-width:1.86356473;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccc" />
+  <path
+     id="path4317"
+     d="m 1088.6888,737.8061 107.787,-93.4606 13.4234,41.4104 -112.6742,75.1412 z"
+     style="fill:#e6f4f4;fill-opacity:0.85098039;stroke:#d4e1f5;stroke-width:1.86356473;stroke-opacity:1" />
+  <path
+     id="path4319"
+     d="m 1213.5223,684.99248 -14.4271,-43.36958 205.0386,-178.25301 64.5063,288.38701 -1.3977,1.5412 z"
+     style="fill:#e6f4f5;fill-opacity:1;stroke:#d4e1f5;stroke-width:1.86356473;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccc" />
+</svg>
