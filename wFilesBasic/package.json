@@ -1,0 +1,55 @@
+{
+  "name": "wfilesbasic",
+  "version": "0.2.128",
+  "description": "Collection of basic classes to abstract files systems and partly good defined API for general algorithms on files.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    "Kostiantyn Wandalen <wandalen@obox.systems>",
+    "Volodymyr M. <volodymyr.migdal@gmail.com>",
+    "Ihor O. <iostashvxi@gmail.com>",
+    "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "proto/node_modules/wfilesbasic",
+  "files": [
+    "proto/wtools/amid/l4_files/",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wfilesbasic"
+  ],
+  "scripts": {
+    "test": "wtest .run \"proto/**\"",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wFilesBasic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wFilesBasic/issues"
+  },
+  "dependencies": {
+    "wweburibasic": "latest",
+    "wverbal": "latest",
+    "wuribasic": "latest",
+    "wTools": "latest",
+    "wselector": "latest",
+    "wRegexpObject": "latest",
+    "wLogger": "latest",
+    "wintrospectorbasic": "latest",
+    "wgdf": "latest",
+    "wfieldsstack": "latest",
+    "wConsequence": "latest",
+    "proper-lockfile": "=4.1.1"
+  },
+  "devDependencies": {
+    "wTesting": "latest",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools",
+    "wFiles",
+    "file",
+    "standardized abstract interface"
+  ]
+}
