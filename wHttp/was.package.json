@@ -1,0 +1,42 @@
+{
+  "name": "whttp",
+  "version": "0.3.150",
+  "description": "Collection of tools to make HTTP requests.",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
+  "contributors": [
+    "Kostiantyn Wandalen <wandalen@obox.systems>",
+    "Dmytro Kryvoruchko <dm.vict.kr@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "proto/node_modules/whttp",
+  "files": [
+    "proto/wtools/amid/l1/http",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/whttp"
+  ],
+  "scripts": {
+    "test": "wtest .run 'proto/**' rapidity:-3",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wHttp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wHttp/issues"
+  },
+  "dependencies": {
+    "wTools": "",
+    "wremote": "",
+    "wConsequence": "",
+    "needle": "3.1.0"
+  },
+  "devDependencies": {
+    "wTesting": "",
+    "eslint": "7.32.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
+}
